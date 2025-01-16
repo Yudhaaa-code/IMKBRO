@@ -1,7 +1,7 @@
 
-<div class="mt-10">
-  <h2 class="font-medium md:text-lg">🔥 Populer Sekarang</h2>
-  <div class="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4 mt-4">
+<div class="mt-10 p-4 mx-auto lg:max-w-5xl max-w-2xl">
+  <h1 class="font-bold md:text-lg text-zinc-100">POPULER SEKARANG.</h1>
+  <div class="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4 mt-4 ">
     <a class="block relative rounded-lg lg:rounded-xl hover:scale-105 overflow-hidden transition-all duration-300 ease-out group" href="/mlbb">
       <img alt="" loading="lazy" width="384" height="512" decoding="async" data-nimg="1" class="w-full h-full object-cover" style="color:transparent" srcset="img/mlbb.jpg">
       <div class="hidden lg:block absolute inset-0 dark:border-2 border-transparent group-hover:border-zinc-50 rounded-lg lg:rounded-xl group-hover:bg-gradient-to-t from-zinc-950/90 via-zinc-950/50 to-transparent transition-all duration-300 ease-out">
