@@ -1,5 +1,5 @@
 
-<div class="mt-10 p-4 mx-auto lg:max-w-5xl max-w-2xl">
+<div class="mt-10 mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
   <h1 class="font-bold md:text-lg text-zinc-100">POPULER SEKARANG.</h1>
   <div class="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4 mt-4 ">
     <a class="block relative rounded-lg lg:rounded-xl hover:scale-105 overflow-hidden transition-all duration-300 ease-out group" href="/mlbb">

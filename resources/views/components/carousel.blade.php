@@ -1,5 +1,5 @@
 <!-- Slider -->
-<div x-data="carousel()" x-init="init()" class="relative p-4 mx-auto lg:max-w-5xl max-w-2xl">
+<div x-data="carousel()" x-init="init()" class="relative mt-8 mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
   <!-- Slider Container -->
   <div class="relative overflow-hidden w-full rounded-lg md:rounded-2xl">
     <div class="flex transition-transform duration-700" :style="{ transform: `translateX(-${currentSlide * 100}%)` }">
