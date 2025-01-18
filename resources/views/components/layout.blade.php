@@ -11,9 +11,9 @@
 <body class="h-full bg-zinc-900">
 <x-navbar></x-navbar>
 
-    <div class="min-h-full">
+    {{-- <div class="min-h-full"> --}}
         
-      </div>
+      {{-- </div> --}}
       
     </body>
 </html>
