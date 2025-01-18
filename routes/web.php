@@ -17,3 +17,4 @@ Route::get('/product-detail', function () {
  
 Route::resource('/home', imageController::class);
 Route::get('/', [imageController::class, 'index']);
+Route::get('/imgprod/{id}', [imageController::class, 'show'])->name('imgprod.show');

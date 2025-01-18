@@ -46,7 +46,22 @@ class imageController extends Controller
      */
     public function show(string $id)
     {
-        //
+        // Ambil data berdasarkan ID
+    $imgProd = ImgProd::find($id);
+
+    // Jika data tidak ditemukan, tampilkan error 404
+    if (!$imgProd) {
+        abort(404, 'Data not found');
+    }
+
+    // Pastikan file Blade tujuan ada
+    $bladeName = $imgProd->blade_name;
+    if (!view()->exists($bladeName)) {
+        abort(404, "Blade file '{$bladeName}' not found");
+    }
+
+    // Kirim data ke file Blade tujuan
+    return view($bladeName, ['imgProd' => $imgProd]);
     }
 
     /**

@@ -17,6 +17,7 @@ return new class extends Migration
             $table->string('image_prod');
             $table->string('title');
             $table->string('subtitle');
+            $table->string('blade_name');
         });
     }
 
