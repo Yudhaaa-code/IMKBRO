@@ -1,6 +1,6 @@
 <x-layout></x-layout>
 <header>
-    <div class="banner w-full h-auto">
+    <div class="banner w-auto h-auto">
         <img src="/img/iklan1920.jpg" alt="Banner Char Point Blank">
     </div>
 </header>
