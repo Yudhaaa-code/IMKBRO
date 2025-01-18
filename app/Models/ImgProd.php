@@ -9,5 +9,5 @@ class ImgProd extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['image_prod'];
+    protected $fillable = ['image_prod', 'blade_name'];
 }
