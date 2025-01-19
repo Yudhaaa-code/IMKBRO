@@ -1,7 +1,7 @@
 <x-layout></x-layout>
-<header>
-    <div class="banner w-auto h-auto">
-        <img src="/img/iklan1920.jpg" alt="Banner Char Point Blank">
+<header class="relative">
+    <div class="w-full h-auto">
+        <img src="/img/iklan1920.jpg" alt="Banner Char Point Blank" class="w-full h-auto">
     </div>
 </header>
 

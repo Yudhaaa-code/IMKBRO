@@ -2,18 +2,18 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\ImgProd;
+use App\Models\FreeFire;
 use Illuminate\Http\Request;
 
-class imageController extends Controller
+class freeFireController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        $images = ImgProd::all();
-        return view('home', compact('images'));
+        $frees = FreeFire::all();
+        return view('ff', compact('frees'));
     }
 
     /**
@@ -27,16 +27,16 @@ class imageController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request)
+    public function store(Request $check)
     {
-        $request->validate([
-            'ImgProd' => 'required|image|mimes:png,jpg,jpeg,gif|max:2048',
+        $check->validate([
+            'FreeFire' => 'required|image|mimes:png,jpg,jpeg,gif|max:2048',
         ]);
 
-        $imageName = time() . '.' . $request->ImgProd->extension();
-        $request->ImgProd->storeAs('public/img', $imageName);
+        $freeName = time() . '.' . $check->FreeFire->extension();
+        $check->FreeFire->storeAs('public/img_ff', $freeName);
 
-        ImgProd::create(['image_prod' => 'img/' . $imageName]);
+        FreeFire::create(['image' => 'img/' . $freeName]);
 
         return back()->with('success', 'image upload succsesfully');
     }
@@ -44,12 +44,9 @@ class imageController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    public function show(string $blade)
     {
-       // Menggunakan findOrFail untuk mendapatkan produk atau abort jika tidak ditemukan
-       $imgProd = ImgProd::findOrFail($id);
-    
-       return view('produk.show', ['imgProd' => $imgProd]);
+       //
     }
 
     /**
