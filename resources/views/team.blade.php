@@ -8,7 +8,7 @@
       <ul role="list" class="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2">
         <li>
           <div class="flex items-center gap-x-6">
-            <img class="size-16 rounded-full" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+            <img class="size-16 rounded-full" src="img/abaw.jpg" alt="">
             <div>
               <h3 class="text-base/7 font-semibold tracking-tight text-zinc-100">Mohamad Akbar Saputra</h3>
               <p class="text-sm/6 font-semibold text-zinc-400">Front-End / KA10</p>
@@ -18,9 +18,9 @@
 
         <li>
             <div class="flex items-center gap-x-6">
-              <img class="size-16 rounded-full" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+              <img class="size-16 rounded-full" src="img/rijal.jpg" alt="">
               <div>
-                <h3 class="text-base/7 font-semibold tracking-tight text-zinc-100">Muhammad Rijal Fuady</h3>
+                <h3 class="text-base/7 font-semibold tracking-tight text-zinc-100">Muhammad Rijal Fuadi</h3>
                 <p class="text-sm/6 font-semibold text-zinc-400">Front-End / KA10</p>
               </div>
             </div>
@@ -28,7 +28,7 @@
 
           <li>
             <div class="flex items-center gap-x-6">
-              <img class="size-16 rounded-full" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+              <img class="size-16 rounded-full" src="img/nadir.png" alt="">
               <div>
                 <h3 class="text-base/7 font-semibold tracking-tight text-zinc-100">Nadhir Bintang Abdurrahman</h3>
                 <p class="text-sm/6 font-semibold text-zinc-400">Back-End / KA10</p>
@@ -38,7 +38,7 @@
 
           <li>
             <div class="flex items-center gap-x-6">
-              <img class="size-16 rounded-full" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+              <img class="size-16 rounded-full" src="img/yuda.png" alt="">
               <div>
                 <h3 class="text-base/7 font-semibold tracking-tight text-zinc-100">Yudha Putra Anangga</h3>
                 <p class="text-sm/6 font-semibold text-zinc-400">Back-End / KA10</p>
@@ -48,7 +48,7 @@
 
           <li>
             <div class="flex items-center gap-x-6">
-              <img class="size-16 rounded-full" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+              <img class="size-16 rounded-full" src="img/abar.jpg" alt="">
               <div>
                 <h3 class="text-base/7 font-semibold tracking-tight text-zinc-100">Muhammad Akbar Surya</h3>
                 <p class="text-sm/6 font-semibold text-zinc-400">Desginer / KA10</p>
@@ -58,7 +58,7 @@
 
           <li>
             <div class="flex items-center gap-x-6">
-              <img class="size-16 rounded-full" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+              <img class="size-16 rounded-full" src="img/fajar.jpg" alt="">
               <div>
                 <h3 class="text-base/7 font-semibold tracking-tight text-zinc-100">Ahmad Fajar Pangestu</h3>
                 <p class="text-sm/6 font-semibold text-zinc-400">Designer / KA10</p>
