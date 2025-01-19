@@ -5,7 +5,7 @@
 
   <!-- Judul dengan Glow dan Animasi -->
   <h1 class="relative text-3xl font-extrabold text-white sm:text-5xl tracking-widest glow-neon">
-    ⚔️ Koleksi Akun Mobile Legends Premium ⚔️
+    ⚔️ Koleksi Akun Point Blank Premium ⚔️
   </h1>
 
   <!-- Subtitle -->
