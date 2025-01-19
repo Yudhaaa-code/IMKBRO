@@ -14,6 +14,10 @@ Route::get('/', function () {
     return view('home');
 });
 
+Route::get('/team', function () {
+    return view('team');
+});
+
 
 Route::resource('/ff', freeFireController::class);
 Route::resource('/mlbb', mlbbController::class);

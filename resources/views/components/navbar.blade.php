@@ -33,7 +33,7 @@
           <div class="flex space-x-4">
             <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
             <a href="/" class="rounded-md px-3 py-2 text-sm font-medium text-white  hover:text-zinc-400" aria-current="page">Beranda</a>
-            <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-white hover:text-zinc-400">Catalog</a>
+            <a href="/team" class="rounded-md px-3 py-2 text-sm font-medium text-white hover:text-zinc-400">Our Team</a>
           </div>
         </div>
       </div>
@@ -74,7 +74,7 @@
     <div class="space-y-1 px-2 pb-3 pt-2">
       <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
       <a href="/" class="block rounded-md px-3 py-2 text-base font-medium text-white hover:text-zinc-400" aria-current="page">Beranda</a>
-      <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-white hover:text-zinc-400">Catalog</a>
+      <a href="/team" class="block rounded-md px-3 py-2 text-base font-medium text-white hover:text-zinc-400">Our Team</a>
     </div>
   </div>
 
