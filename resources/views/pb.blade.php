@@ -35,7 +35,7 @@
               <p class="mt-1 text-xs text-zinc-300">Rp.{{ $point->price }}</p>
         
               <form class="mt-2">
-                <button
+                <button type="button" onclick="window.location.href='/pembayaran/create'" 
                   class="block w-full rounded bg-yellow-400 p-2 text-xs font-medium transition hover:scale-105"
                 >
                   Buy Now
