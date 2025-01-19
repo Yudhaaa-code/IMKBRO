@@ -1,7 +1,7 @@
 
 <nav x-data="{ isOpen: false }" class="bg-zinc-900 shadow-md border-b border-gray-600 bg-opacity-90 backdrop-blur-md sticky top-0 z-50">
   <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-    <div class="relative flex h-16 items-center justify-between">
+    <div class="relative flex min-h-16 items-center justify-between">
       <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
         <!-- Mobile menu button-->
         <button  @click="isOpen = !isOpen" type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400" aria-controls="mobile-menu" aria-expanded="false">
@@ -26,9 +26,9 @@
         </button>
       </div>
       <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-        <div class="flex shrink-0 items-center">
-          <img class="h-8 w-auto" src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=500" alt="Your Company">
-        </div>
+  <div class="flex shrink-0 items-center">
+    <img class="h-12 w-auto" src="/img/azr.png" alt="Your Company">
+  </div>
         <div class="hidden sm:ml-6 sm:block">
           <div class="flex space-x-4">
             <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->

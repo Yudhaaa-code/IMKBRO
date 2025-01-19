@@ -7,7 +7,7 @@
       </div>
       <!-- Slide 2 -->
       <div class="w-full flex-shrink-0 flex justify-center h-full">
-        <img  class="w-full flex-shrink-0 flex justify-center h-full" src="img/iklanvalo.jpg" alt="slide 2">
+        <img  class="w-full flex-shrink-0 flex justify-center h-full" src="img/iklanml.jpg" alt="slide 2">
       </div>
       <!-- Slide 3 -->
       <div class="w-full flex-shrink-0 flex justify-center h-full ">
