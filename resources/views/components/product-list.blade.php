@@ -4,7 +4,7 @@
   <div class="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4 mt-4 ">
     @foreach ( $images as $image )
       
-    <a class="block relative rounded-lg lg:rounded-xl hover:scale-105 overflow-hidden transition-all duration-300 ease-out group" href="{{ route('imgprod.show', ['id' => $image->id]) }}">
+    <a class="block relative rounded-lg lg:rounded-xl hover:scale-105 overflow-hidden transition-all duration-300 ease-out group" href="{{ route('produk.show', ['id' => $image->id]) }}">
       <img alt="" loading="lazy" width="384" height="512" decoding="async" data-nimg="1" class="w-full h-full object-cover" style="color:transparent" src="{{ asset('storage/img/' . $image->image_prod) }}">
       <div class="hidden lg:block absolute inset-0 dark:border-2 border-transparent group-hover:border-zinc-50 rounded-lg lg:rounded-xl group-hover:bg-gradient-to-t from-zinc-950/90 via-zinc-950/50 to-transparent transition-all duration-300 ease-out">
       </div>
