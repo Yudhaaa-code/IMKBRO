@@ -2,18 +2,18 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\FreeFire;
+use App\Models\mlbb;
 use Illuminate\Http\Request;
 
-class freeFireController extends Controller
+class mlbbController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        $frees = FreeFire::all();
-        return view('ff', compact('frees'));
+        $ml = mlbb::all();
+        return view('mlbb', compact('ml'));
     }
 
     /**
@@ -27,16 +27,16 @@ class freeFireController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request)
+    public function store(Request $glass)
     {
-        $request->validate([
-            'FreeFire' => 'required|image|mimes:png,jpg,jpeg,gif|max:2048',
+        $glass->validate([
+            'mlbb' => 'required|image|mimes:png,jpg,jpeg,gif|max:2048',
         ]);
 
-        $freeName = time() . '.' . $request->FreeFire->extension();
-        $request->FreeFire->storeAs('public/img_ff', $freeName);
+        $mlName = time() . '.' . $glass->mlbb->extension();
+        $glass->mlbb->storeAs('public/img_mlbb', $mlName);
 
-        FreeFire::create(['image' => 'img_ff/' . $freeName]);
+        mlbb::create(['image' => 'img_mlbb/' . $mlName]);
 
         return back()->with('success', 'image upload succsesfully');
     }

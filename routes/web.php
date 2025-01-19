@@ -1,21 +1,21 @@
 <?php
 
+use App\Http\Controllers\cocController;
 use App\Http\Controllers\freeFireController;
-use App\Http\Controllers\imageController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\mlbbController;
+use App\Http\Controllers\pointblankController;
+use App\Http\Controllers\pubgController;
+use App\Http\Controllers\ValorantController;
 
 Route::get('/', function () {
     return view('home');
-})->name('home');
-
-Route::get('/product-detail', function () {
-    return view('/product-detail');
 });
- 
-Route::resource('/home', imageController::class);
-Route::get('/', [imageController::class, 'index']);
-Route::get('/produk/{id}', [imageController::class, 'show'])->name('produk.show');
 
 
 Route::resource('/ff', freeFireController::class);
-Route::get('/', [freeFireController::class, 'index']);
+Route::resource('/mlbb', mlbbController::class);
+Route::resource('/valorant', ValorantController::class);
+Route::resource('/pubg', pubgController::class);
+Route::resource('/coc', cocController::class);
+Route::resource('/pb', pointblankController::class);
