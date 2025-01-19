@@ -2,18 +2,18 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\FreeFire;
+use App\Models\Coc;
 use Illuminate\Http\Request;
 
-class freeFireController extends Controller
+class cocController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        $frees = FreeFire::all();
-        return view('ff', compact('frees'));
+        $cocs = Coc::all();
+        return view('coc', compact('cocs'));
     }
 
     /**
@@ -27,16 +27,16 @@ class freeFireController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request)
+    public function store(Request $byone)
     {
-        $request->validate([
-            'FreeFire' => 'required|image|mimes:png,jpg,jpeg,gif|max:2048',
+        $byone->validate([
+            'Coc' => 'required|image|mimes:png,jpg,jpeg,gif|max:2048',
         ]);
 
-        $freeName = time() . '.' . $request->FreeFire->extension();
-        $request->FreeFire->storeAs('public/img_ff', $freeName);
+        $cocName = time() . '.' . $byone->Coc->extension();
+        $byone->Coc->storeAs('public/img_coc', $cocName);
 
-        FreeFire::create(['image' => 'img_ff/' . $freeName]);
+        Coc::create(['image' => 'img_coc/' . $cocName]);
 
         return back()->with('success', 'image upload succsesfully');
     }
@@ -44,9 +44,9 @@ class freeFireController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(string $blade)
+    public function show(string $id)
     {
-       //
+        //
     }
 
     /**

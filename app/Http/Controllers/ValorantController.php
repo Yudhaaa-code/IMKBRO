@@ -1,19 +1,18 @@
 <?php
 
 namespace App\Http\Controllers;
-
-use App\Models\FreeFire;
+use App\Models\Valorant;
 use Illuminate\Http\Request;
 
-class freeFireController extends Controller
+class ValorantController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        $frees = FreeFire::all();
-        return view('ff', compact('frees'));
+        $valo = Valorant::all();
+        return view('valorant', compact('valo'));
     }
 
     /**
@@ -27,16 +26,16 @@ class freeFireController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request)
+    public function store(Request $rain)
     {
-        $request->validate([
-            'FreeFire' => 'required|image|mimes:png,jpg,jpeg,gif|max:2048',
+        $rain->validate([
+            'Valorant' => 'required|image|mimes:png,jpg,jpeg,gif|max:2048',
         ]);
 
-        $freeName = time() . '.' . $request->FreeFire->extension();
-        $request->FreeFire->storeAs('public/img_ff', $freeName);
+        $valoName = time() . '.' . $rain->Valorant->extension();
+        $rain->mlbb->storeAs('public/img_valo', $valoName);
 
-        FreeFire::create(['image' => 'img_ff/' . $freeName]);
+        Valorant::create(['image' => 'img_valo/' . $valoName]);
 
         return back()->with('success', 'image upload succsesfully');
     }
@@ -44,9 +43,9 @@ class freeFireController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(string $blade)
+    public function show(string $id)
     {
-       //
+        //
     }
 
     /**

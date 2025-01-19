@@ -5,7 +5,7 @@
 
   <!-- Judul dengan Glow dan Animasi -->
   <h1 class="relative text-3xl font-extrabold text-white sm:text-5xl tracking-widest glow-neon">
-    ⚔️ Koleksi Akun Free Fire Premium ⚔️
+    ⚔️ Koleksi Akun PUBG Mobile Premium ⚔️
   </h1>
 
   <!-- Subtitle -->
@@ -21,18 +21,18 @@
 <div class="mt-2 mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 mb-20">
     
     <div class="grid grid-cols-2 gap-4 p-2 sm:grid-cols-2 lg:grid-cols-4">
-        @foreach ($frees as $free)
+        @foreach ($pubg as $mob)
         <a href="#" class="group relative block overflow-hidden">
             <img
-              src="{{ asset('storage/img_ff/' . $free->image) }}"
+              src="{{ asset('storage/img_pubg/' . $mob->image) }}"
               alt="Robot Toy"
               class="h-40 w-full object-cover transition duration-500 group-hover:scale-105 rounded-t-lg"
             />
         
             <div class="relative bg-zinc-800 p-2 rounded-b-lg">
         
-              <h3 class="mt-2 text-sm font-medium text-zinc-100">{{ Str::limit($free->title, 35) }}</h3>
-              <p class="mt-1 text-xs text-zinc-300">Rp.{{ $free->price }}</p>
+              <h3 class="mt-2 text-sm font-medium text-zinc-100">{{ Str::limit($mob->title, 35) }}</h3>
+              <p class="mt-1 text-xs text-zinc-300">Rp.{{ $mob->price }}</p>
         
               <form class="mt-2">
                 <button

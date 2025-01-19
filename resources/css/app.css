@@ -1,3 +1,63 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Animasi kustom untuk proyek Anda */
+@keyframes gradient-move {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  .bg-animated-gradient {
+    background: linear-gradient(-45deg, #0f0c29, #302b63, #24243e, #7f00ff);
+    background-size: 400% 400%;
+    animation: gradient-move 8s ease infinite;
+  }
+  
+  @keyframes text-glow {
+    0%, 100% {
+      text-shadow: 0 0 5px #fff, 0 0 10px #7f00ff, 0 0 20px #7f00ff, 0 0 40px #7f00ff;
+    }
+    50% {
+      text-shadow: 0 0 10px #fff, 0 0 20px #ff00ff, 0 0 40px #ff00ff, 0 0 80px #ff00ff;
+    }
+  }
+  
+  .glow-neon {
+    animation: text-glow 2s ease-in-out infinite;
+  }
+  
+  @keyframes ping-fast {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(2.5);
+      opacity: 0;
+    }
+  }
+  
+  .animate-ping-fast {
+    animation: ping-fast 1.5s cubic-bezier(0, 0, 0.2, 1) infinite;
+  }
+  
+  @keyframes rotate-slow {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .animate-rotate-slow {
+    animation: rotate-slow 12s linear infinite;
+  }

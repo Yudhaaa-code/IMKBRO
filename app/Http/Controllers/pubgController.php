@@ -2,18 +2,18 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\ImgProd;
+use App\Models\Pubg;
 use Illuminate\Http\Request;
 
-class imageController extends Controller
+class pubgController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        $images = ImgProd::all();
-        return view('home', compact('images'));
+        $pubg = Pubg::all();
+        return view('pubg', compact('pubg'));
     }
 
     /**
@@ -27,16 +27,16 @@ class imageController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request)
+    public function store(Request $done)
     {
-        $request->validate([
-            'ImgProd' => 'required|image|mimes:png,jpg,jpeg,gif|max:2048',
+        $done->validate([
+            'Valorant' => 'required|image|mimes:png,jpg,jpeg,gif|max:2048',
         ]);
 
-        $imageName = time() . '.' . $request->ImgProd->extension();
-        $request->ImgProd->storeAs('public/img', $imageName);
+        $pubgName = time() . '.' . $done->Pubg->extension();
+        $done->Pubg->storeAs('public/img_pubg', $pubgName);
 
-        ImgProd::create(['image_prod' => 'img/' . $imageName]);
+        Pubg::create(['image' => 'img_pubg/' . $pubgName]);
 
         return back()->with('success', 'image upload succsesfully');
     }
@@ -46,10 +46,7 @@ class imageController extends Controller
      */
     public function show(string $id)
     {
-       // Menggunakan findOrFail untuk mendapatkan produk atau abort jika tidak ditemukan
-       $imgProd = ImgProd::findOrFail($id);
-    
-       return view('produk.show', ['imgProd' => $imgProd]);
+        //
     }
 
     /**
